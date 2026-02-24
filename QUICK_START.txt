@@ -1,0 +1,105 @@
+╔════════════════════════════════════════════════════════════════╗
+║     CHAITANYA'S PORTFOLIO — QUICK START REFERENCE CARD          ║
+╚════════════════════════════════════════════════════════════════╝
+
+🎯 PROJECT LOCATION
+   ~/Documents/chaitanya-portfolio
+
+📦 INSTALL & RUN
+   cd ~/Documents/chaitanya-portfolio
+   npm install
+   npm run dev
+   → Opens http://localhost:3000
+
+🔧 EDIT CONTENT
+   Everything is in: src/data/portfolio.ts
+   - Update personal info
+   - Add/edit experiences
+   - Update project details
+   - Modify skills
+   - Add education
+
+🎨 DESIGN
+   Color scheme in: tailwind.config.ts
+   Global styles in: src/index.css
+   Components in: src/components/
+
+📁 STRUCTURE
+   src/
+   ├── components/      [9 React components]
+   ├── data/           [portfolio.ts — all content]
+   ├── hooks/          [useScrollAnimation]
+   ├── App.tsx         [main wrapper]
+   ├── main.tsx        [entry point]
+   └── index.css       [global styles]
+
+🚀 BUILD & DEPLOY
+   npm run build       → Creates dist/ folder
+   npm run preview     → Test production build
+   Deploy dist/ to:
+   - Vercel (recommended)
+   - Netlify
+   - GitHub Pages
+   - Any static host
+
+⚡ KEY FEATURES
+   ✓ Dark luxury editorial design (cyan + gold)
+   ✓ Fully responsive (320px–4K)
+   ✓ TypeScript strict mode
+   ✓ Smooth animations (Framer Motion)
+   ✓ Scroll-triggered reveals
+   ✓ Glassmorphism effects
+   ✓ Accessible (WCAG)
+   ✓ ~100KB gzipped
+
+🎯 SECTIONS BUILT
+   1. Navbar — sticky, mobile-responsive
+   2. Hero — typewriter effect, availability badge
+   3. About — stats, bio, avatar placeholder
+   4. Skills — organized categories with chips
+   5. Experience — vertical timeline with highlights
+   6. Education — degree cards
+   7. Projects — bento grid with 4 samples
+   8. Contact — form + direct contact
+   9. Footer — social links + easter egg
+
+📝 CUSTOMIZATION CHECKLIST
+   □ Update src/data/portfolio.ts with your content
+   □ Replace avatar emoji with your photo
+   □ Update social links
+   □ Review accent colors (cyan #00e5ff, gold #f0b429)
+   □ Add real project images/screenshots
+   □ Test on mobile
+   □ Build and test production version
+   □ Deploy!
+
+💡 TIPS
+   • All content is typed — catch errors early
+   • Components use Framer Motion for animations
+   • useScrollAnimation hook triggers on scroll
+   • Tailwind tree-shakes unused CSS
+   • Mobile menu auto-closes on nav
+   • Form has success state animation
+
+🆘 COMMON COMMANDS
+   npm run dev       → Start dev server
+   npm run build     → Production build
+   npm run preview   → Preview production build
+   npm run lint      → Check TypeScript errors
+
+📚 DOCUMENTATION
+   - README.md — Full documentation
+   - SETUP_GUIDE.md — Detailed setup + customization
+   - Component files are well-commented
+
+🎬 NEXT MOVE
+   1. cd ~/Documents/chaitanya-portfolio
+   2. npm install
+   3. npm run dev
+   4. Edit src/data/portfolio.ts
+   5. Customize colors/layout as needed
+   6. Build and deploy!
+
+═══════════════════════════════════════════════════════════════════
+"I architect systems that scale, ship code that lasts." — Your tagline
+═══════════════════════════════════════════════════════════════════
