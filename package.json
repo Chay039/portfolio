@@ -10,8 +10,8 @@
     "deploy": "npm run build && cd out && git init && git add -A && git commit -m 'Deploy' && git remote add origin https://github.com/Chay039/portfolio.git || true && git push -f origin HEAD:gh-pages && cd .."
   },
   "dependencies": {
-    "@react-three/drei": "^9.100.4",
-    "@react-three/fiber": "^9.5.0",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
     "@studio-freight/lenis": "^1.0.42",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
