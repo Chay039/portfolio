@@ -140,11 +140,24 @@ export const education = [
         period: 'June 2021',
         location: 'Vellore, India',
         gpa: '8.4 / 10',
-        highlight: 'Gold Medalist',
     },
 ]
 
 export const projects = [
+    {
+        id: 'midnightwish',
+        title: 'Midnight Wish',
+        subtitle: 'Birthday & Anniversary Reminder Platform',
+        description:
+            'A timezone-aware application that automates email reminders for upcoming birthdays and anniversaries. Built with a React Native mobile app and Next.js backend utilizing Vercel Cron jobs.',
+        metric: '100% Reliable',
+        metricLabel: 'Automated Alerts',
+        color: '#ec4899',
+        tags: ['React Native', 'Next.js', 'Vercel', 'Cron'],
+        liveUrl: 'https://midnightwish.chayjuturi.com/',
+        githubUrl: 'https://github.com/Chay039/Midnightwish',
+        featured: true,
+    },
     {
         id: 'cloudscale',
         title: 'CloudScale API Gateway',
@@ -159,20 +172,7 @@ export const projects = [
         githubUrl: '#',
         featured: true,
     },
-    {
-        id: 'iot-dashboard',
-        title: 'Real-Time IoT Dashboard',
-        subtitle: 'WebSocket Visualization',
-        description:
-            'Live sensor data visualization platform using WebSocket for real-time updates. Built with React, MongoDB, and custom visualization engine for multi-device monitoring.',
-        metric: '< 50ms',
-        metricLabel: 'Data Latency',
-        color: '#a855f7',
-        tags: ['React', 'WebSocket', 'MongoDB', 'Node.js', 'Real-time'],
-        liveUrl: '#',
-        githubUrl: '#',
-        featured: true,
-    },
+
     {
         id: 'ecommerce',
         title: 'E-Commerce Platform',

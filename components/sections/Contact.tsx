@@ -24,9 +24,25 @@ export default function Contact() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('sending');
-        // Simulate send
-        await new Promise((r) => setTimeout(r, 1500));
-        setStatus('sent');
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form),
+            });
+            
+            if (res.ok) {
+                setStatus('sent');
+                setForm({ name: '', email: '', subject: '', message: '' });
+            } else {
+                setStatus('idle');
+                alert('Failed to send message. Please ensure your email credentials are set up in the environment variables.');
+            }
+        } catch (error) {
+            console.error(error);
+            setStatus('idle');
+            alert('An error occurred while sending the message.');
+        }
     };
 
     const contactItems = [

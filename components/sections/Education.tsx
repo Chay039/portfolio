@@ -80,10 +80,12 @@ export default function Education() {
                                         <Award size={13} />
                                         GPA: <span className="text-white font-mono font-medium">{edu.gpa}</span>
                                     </div>
-                                    <div className="flex items-center gap-2" style={{ color }}>
-                                        <Star size={13} />
-                                        {edu.highlight}
-                                    </div>
+                                    {edu.highlight && (
+                                        <div className="flex items-center gap-2" style={{ color }}>
+                                            <Star size={13} />
+                                            {edu.highlight}
+                                        </div>
+                                    )}
                                 </div>
 
                                 <div className="mt-5 pt-4 border-t border-white/5 font-mono text-xs font-semibold" style={{ color }}>
