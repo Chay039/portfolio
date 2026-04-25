@@ -24,10 +24,25 @@ export default function Contact() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('sending');
-        // Simulate send for now to ensure static export works
-        await new Promise((r) => setTimeout(r, 1500));
-        setStatus('sent');
-        setForm({ name: '', email: '', subject: '', message: '' });
+        
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form),
+            });
+
+            if (response.ok) {
+                setStatus('sent');
+                setForm({ name: '', email: '', subject: '', message: '' });
+            } else {
+                console.error('Failed to send message.');
+                setStatus('idle');
+            }
+        } catch (error) {
+            console.error('An error occurred.', error);
+            setStatus('idle');
+        }
     };
 
     const contactItems = [
